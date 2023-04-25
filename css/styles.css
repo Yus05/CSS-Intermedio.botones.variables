@@ -1,0 +1,67 @@
+:root{
+    --bg-color: #333;
+    --text-color: #fff;
+    --color-blue: blue;
+    --color-red: red;
+    --color-orange: orange;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.boton{
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: .75rem;
+}
+
+/* Primer boton: */
+.boton--blue{
+    background-color: var(--color-blue);
+}
+
+/* Segundo boton: */
+.boton--red{
+    background-color: var(--color-red);
+}
+
+.boton--blue,
+.boton--red{
+    color: var(--text-color);
+}
+
+/* Tercer boton:  */
+.boton--orange{
+    background-color: var(--color-orange);
+}
+
+/* Cuarto boton:  */
+.boton--gost-blue{
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
+}
+
+/* Quinto boton:  */
+.boton--gost-red{
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+/* Sexto boton: */
+.boton--gost-orange{
+    border: 1px solid var(--color-orange);
+    color: var(--color-orange);
+}
+
+.boton--gost-blue,
+.boton--gost-red,
+.boton--gost-orange{
+    background-color: transparent;
+}
+
+/* Ahora, vamos a aplicar variables CSS.
+Segun la solucion de Doria, mis errrores fueron que cree muchas variables. El solo creo dos variables en root, una para el texto y otra para el bgc. Luego cuando hacia falta en cada caso, simplemente modificaba el valor. Era como si simplemente sobreescribiera los valores de cada una de estas. SOLO SE DEBEN CREAR VARIABLES PARA LO QUE VA A NECESITAR MODIFICAR VALORES.
+
+ */
